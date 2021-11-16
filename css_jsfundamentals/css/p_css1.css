@@ -1,31 +1,29 @@
 body {
-    margin: 0 auto;
-    padding: 0px auto; 
+    font-size: 16px;
 }
 
 .container {
     background: #f1f1f1;
-    width:500px;
+    width: 450px;
+    margin: 0 auto;
     padding: 25px;
 }
 
-h1 {
+h1 {    
+    font-size: 48px;
+    color: #2e7ad3;
+    text-align: center;
     margin: 45px 0;
 }
 
-h1 {
-    
-    font-size: 48px;
-    color: #2e7ad3;
+img{
+    width: 450px;
 }
 
 h2 {
    font-size: 32px;  
    color: #104c90;
-}
-
-img {
-    margin-top: 25px;    
+   margin: 0 0 10px;
 }
 
 p {
@@ -33,6 +31,16 @@ p {
     margin-bottom: 9px;
 }
 
-a {
+a:link, a:visited{
   color: #ff8000;
+  font-weight: bold;
+}
+
+a:hover, 
+a:focus {
+    color: #104c90;
+}
+
+.read-more{
+    margin: 0;
 }
