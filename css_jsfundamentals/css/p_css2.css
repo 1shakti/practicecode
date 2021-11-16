@@ -1,0 +1,41 @@
+.card {
+    background-color: #000;
+    color: white;
+    width: 500px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+h1,p{
+    margin-top: 0;
+}
+
+h1{
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.accent-color {
+    color: #FFE600;
+}
+
+a {
+    color: #FFE600;
+}
+
+.button {
+    background-color: #FFE600;
+    padding: 10px 25px;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.links {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
