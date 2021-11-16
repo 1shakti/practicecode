@@ -1,0 +1,38 @@
+
+
+
+
+<!-- 
+   
+An awesome blog
+
+An awesome blog post 
+    
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Netus et malesuada fames ac. Sed cras ornare arcu dui vivamus. Elementum integer enim neque volutpat ac tincidunt vitae semper.
+Read more...
+
+    
+ -->
+ 
+ 
+ <html>
+     <head>
+         <link href="index.css" rel="stylesheet">
+     </head>
+     <body>
+         <h1>An awesome blog</h1>   
+         <div class="container">
+            <h2>An awesome blog post</h2>
+            <img src="images/window.png" alt="window image"> </img>
+            <p>At vero eos et <a href="#">accusam et justo duo</a> dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+            </p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Netus et malesuada fames ac. <a href="#">Sed cras ornare</a> arcu dui vivamus. Elementum integer enim neque volutpat ac tincidunt vitae semper.
+            </p>
+            <p class="read-more">
+                <a href="#">read more..</a>
+            </p>
+         </div>   
+     </body>
+ </html>
