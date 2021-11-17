@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 36px;
+    color: #fff;
+}
+
+h2{
+    font-size: 24px;  
+    color: #ef5839;
+}
+
+header{
+    background: #2e354f;
+}
+
