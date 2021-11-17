@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+
+h1, h2, p {
+    margin-top: 0;
+}
+
+
+h1 {
+    font-size: 25px;
+}
+
+p{
+    font-size: 18px;
+}
+
+header, section {
+    padding: 25px;
+}
+
+header {
+    background: #FFE600;
+    color: #000;
+}
+
+a {
+    color: #FFE600;
+}
+
+.section-one {
+    background: #000;
+    color: white;    
+}
+
+/* start compound selectors*/
+
+.section-two a {
+    coloe: #000;
+}
+
+.section-one .btn {
+    padding: 10px 25px;
+    text-align: center;
+    margin-right: 10PX;
+    display: inline-block;
+    background: #FFE600;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-one .btn:hover {
+    background: white;
+}
+
+.section-two .btn {
+    display: inline-block;
+    background: #000;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+.section-two .btn:hover {
+    background: #FFE600;
+    color: black;
+}
+/* end compound selectors*/
+
+.btn-yellow {
+    padding: 10px 25px;
+    text-align: center;
+    margin-right: 10PX;
+    display: inline-block;
+    background: #FFE600;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-yellow:hover {
+    background: white;
+}
+
+.btn-black {
+    display: inline-block;
+    background: #000;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 25px;
+}        
+
+.btn-black:hover {
+    background: #FFE600;
+    color: black;
+}
+
+.gen-btn {
+    padding: 10px 25px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;    
+}
+
+.btn-accent {
+    background: #FFE600;
+    color: #000;
+}
+
+.btn-accent:hover {
+    background: white;
+}
+
+.btn-dark {
+    background: #000;
+    color: white;
+}
+
+.btn-dark:hover {
+    background: #FFE600;
+    color: white;
+}
