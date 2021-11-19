@@ -1,7 +1,8 @@
 body{
     margin: 0;
+    color: #FFF;
     font-size: 21px;
-    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: 300;
 }
@@ -11,23 +12,65 @@ body{
     margin: 0 auto; 
 }
 
+header, section {
+    padding: 100px 0;
+}
+
+header{
+    background: #D7D7D7;
+    background: #252525;
+}
+
+.section-one {
+    background: #FFEAEA;
+    background: #FFf;
+    color: #000;
+}
+
+.section-two {
+    background: #EAF9FF;
+    background: #252525;
+}
+
+.bold-text{
+    font-weight: 900;
+    display: block;
+}
+
+h1 .bold-text{
+    font-size: 80px;
+}
+
+h2 .bold-text{
+    font-size: 60px;
+}
+
 h1,h2{
     font-weight: 300;
 }
 
-h1{
-    font-size:60px;
+h1 {
+    font-size: 60px;
 }
 
-h2{
-    font-size:42px;
+h2 {
+    font-size: 42px;
 }
 
 h3{
-    font-weight: 900;
     font-size: 36px;
 }
 
+
 .small-text {
     font-size: 16px;
+}
+
+a{
+    color: #99D930;
+    font-weight: 900;
+}
+
+a:hover{
+    color: #131313;
 }
