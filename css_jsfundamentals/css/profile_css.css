@@ -27,17 +27,23 @@ header{
     background: #EAF9FF;
 }
 
-.bold-text{
-    font-weight: 900;
+.accent-text{
     display: block;
 }
 
-h1 .bold-text{
+.accent-text,
+.name,
+time{
+    font-weight: 900;
+    color: #99D930;
+}
+
+h1 .accent-text{
     font-size: 80px;
     margin-top: 0;
 }
 
-h2 .bold-text{
+h2 .accent-text{
     font-size: 60px;
     margin-top: 0;
 }
@@ -51,8 +57,13 @@ h1 {
     font-size: 60px;
 }
 
-h2 {
+h2 {    
     font-size: 42px;
+    margin-top: 0;
+    border-top: solid 1px #c4c4c4;
+    border-bottom: solid 1px #c4c4c4;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 h3{
@@ -82,6 +93,12 @@ a:hover{
 .inverse{
     background: #000;
     color: #FFF;
+}
+
+.inverse .btn:hover,
+.inverse .btn:focus{
+    background: #FFF;
+    color: #252525;
 }
 
 .btn{
