@@ -86,8 +86,9 @@ a{
     font-weight: 900;
 }
 
-a:hover{
-    color: #131313;
+a:hover,
+a:focus {
+    color: #FFF;
 }
 
 .inverse{
