@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#container{
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+    background-color: royalblue;
+}
+
+#search{
+    display: flex;
+    background-color: orange;
+    padding: 20px;
+}
+
+#search label{
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+#result{
+    display: block;
+    padding: 10px;
+}
+
+#result .name{
+    background-color: #FFF;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
