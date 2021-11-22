@@ -7,14 +7,14 @@ html, body {
 #container{
     margin: 0 auto;
     text-align: center;
-    width: 300px;
+    width: 500px;
     margin-top: 20px;
-    background-color: royalblue;
+    background-color: gainsboro;
 }
 
-#search{
+#search{    
     display: flex;
-    background-color: orange;
+    background-color: mintcream;
     padding: 20px;
 }
 
