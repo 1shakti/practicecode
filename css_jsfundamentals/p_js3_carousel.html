@@ -16,13 +16,17 @@
     7) On those buttons (prev & next) add aria-labels so that screen readers can read the text out loud to the user, on the previous slide button add 'Previous slide', and on the next slide button, add 'Next slide' - screen readers aren't great at describing '<' and '>' - so that's why we are adding aria-labels!
     8) Add 'carousel-item-visible' to the first 'carousel-item' class - the reason for this is because we will eventually hide all carousel items, but we always want to show the first one on loading the page!   
 -->
-    <div id="carousel">
-        <div id="carousel-item">
-            <img class="carousel-item-visible" src="img/nature-lake.png" alt="nature image">
+    <div class="carousel">
+        <div class="carousel-item carousel-item-visible">
+            <img src="img/nature-lake.png" alt="nature image">
+        </div>
+        <div class="carousel-item">
             <img src="img/sunflower.png" alt="sunflower image">
+        </div>
+        <div class="carousel-item">    
             <img src="img/Winter-Forest.png" alt="winter forest image">
         </div>
-        <div id="carousel-action">
+        <div class="carousel-action">
             <button id="carousel-button-prev" aria-labels="Previous slide"><</button>
             <button id="carousel-button-next" aria-labels="Next slide">></button>
         </div>
