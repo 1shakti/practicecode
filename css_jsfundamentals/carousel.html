@@ -6,7 +6,7 @@
     </head>
 <body>
     <div class="carousel">
-        <div class="carousel-item">
+        <div class="carousel-item carousel-item-visible">
             <img src="img/nature-lake.png" alt="nature lake">
         </div>
         <div class="carousel-item">
@@ -16,9 +16,10 @@
             <img src="img/Winter-Forest.png" alt="Winter-Forest">
         </div>
         <div class="carousel-action">
-            <button class="slide-to-next" aria-label="Move to next slide">></button>
-            <button class="slide-to-prev" aria-label="Move to previous slide"><</button>
+            <button id="slide-to-prev" aria-label="Move to previous slide"><</button>
+            <button id="slide-to-next" aria-label="Move to next slide">></button>        
         </div>
     </div>
+    <script src="carousel.js"></script>   
 </body>
 </html>

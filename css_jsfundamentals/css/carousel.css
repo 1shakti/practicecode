@@ -1,0 +1,49 @@
+body{
+    margin:0;
+}
+
+.carousel{
+    width: 600px;
+    position: relative;
+}
+
+.carousel .carousel-item{
+    display: none;
+}
+
+.carousel .carousel-item-visible{
+    display: block;
+}
+
+.carousel-item img{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.carousel .carousel-action{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+}
+
+.carousel .carousel-action button{
+    border-radius: 50%;
+    border: 0;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel-action button#slide-to-prev{
+    margin-left: 20px;
+}
+
+.carousel .carousel-action button#slide-to-next{
+    margin-right: 20px;
+}
