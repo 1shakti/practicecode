@@ -14,4 +14,5 @@ function moveToNextSlide(){
 }
 
 function moveToPrevSlide(){
+
 }
