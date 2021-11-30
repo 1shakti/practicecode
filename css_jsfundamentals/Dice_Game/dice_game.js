@@ -12,6 +12,12 @@ let player2Dice = document.getElementById("player2Dice");
 const rollBtn = document.getElementById("rollBtn");
 const resetBtn = document.getElementById("resetBtn");
 
+function showDisplayButton() {
+    rollBtn.style.display = "none"
+    resetBtn.style.display = "block"
+}
+
+
 rollBtn.addEventListener("click", function(){
 
     const randomNumber = Math.floor(Math.random() * 6) + 1;
@@ -37,13 +43,39 @@ rollBtn.addEventListener("click", function(){
     // }else{
     //     player1Turn = true;
     // }
+
+    if(player1Score >= 20){
+        Msg.textContent = "Player 1 has won! 🥳";
+        showDisplayButton();
+    }else if(player2Score >= 20){
+        Msg.textContent = "Player 2 has won! 🎉";
+        showDisplayButton();
+    }
+
     player1Turn = !player1Turn;
-
-
     // 1. Display the dice number instead of logging it out
     // 2. Use the 'active' class to show which player's turn it is 
     // Hint: use the .classList.remove() and classList.add() methods
     // 3. Update the "message" DOM node so that it states who's turn it is
 
-
 })
+
+
+resetBtn.addEventListener("click", function(){
+    reset()
+})
+ 
+function reset() {
+    message.textContent = "Player 1 Turn"
+    player1Scoreboard.textContent = 0
+    player2Scoreboard.textContent = 0
+    player1Dice.textContent = '-'
+    player2Dice.textContent = '-'
+    player1Score = 0
+    player2Score = 0
+    player1Turn = true
+    resetBtn.style.display = "none"
+    rollBtn.style.display = "block"
+    player2Dice.classList.remove("active")
+    player1Dice.classList.add("active")
+}
