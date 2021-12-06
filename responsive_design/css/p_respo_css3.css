@@ -31,9 +31,14 @@ header{
     }
 }
 
-h1 {
+h1,
+h2,
+h3{
     font-family: 'Lora', serif;
     font-weight: 400;
+}
+
+h1 {
     color: #143774;
     margin: 0;
 }
@@ -43,6 +48,20 @@ h1 {
     color: #1792d2;
     font-size: .75rem;
     margin: 0;
+}
+
+.article-info,
+.article-body{
+    font-family: ubuntu light;
+    font-size: 1.125rem;
+    color: #707070;
+}
+
+.article-read-more{
+    font-family: 'Lora', serif;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #1792D2;
 }
 
 /*****************Nav bar start**********************/
