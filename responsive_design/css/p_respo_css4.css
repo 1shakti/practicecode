@@ -131,13 +131,14 @@ header {
 @media (min-width: 750px) {
     .splitter {
         display: flex;
-        align-items: center;
+        justify-content: center;
     }
     
     /* section {
         background: lightblue;
     } */
     
+
     .articles.inverse {
         background: #99D930;
         color: #252525;
@@ -172,6 +173,9 @@ header {
     .portfolio {
         background: #252525;
         color: #fff;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
     }
     
     .portfolio .container {
@@ -180,10 +184,16 @@ header {
     
     .work {
         display: flex;
-        
+        justify-content: space-between;
     }
     
     .portfolio-item {
         width: 28%;
+    }
+    
+    .portfolio-item img {
+        height: 15em;
+        width: 100%;
+        object-fit: cover;
     }
 }
