@@ -1,0 +1,31 @@
+body{
+    font-size: 1.25rem;
+    font-family: source sans;
+}
+
+/***************** Typography ******************/
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 1.75rem;  
+}
+
+.small{
+    font-size: 0.625rem;
+}
+
+header{
+    background-image: url(img/dark_ribs.png);
+}
+
+.reg_title {  
+    background-image: url(../img/dark_ribs.png);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+}
