@@ -1,9 +1,15 @@
 body{
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-family: source sans;
+    margin: 0;
 }
 
 /***************** Typography ******************/
+
+.top-title{
+    border-top: 1em solid orange;
+    color: orange;
+}
 
 h1{
     font-size: 3.5rem;
@@ -17,15 +23,23 @@ h2{
     font-size: 0.625rem;
 }
 
-header{
-    background-image: url(img/dark_ribs.png);
-}
 
-.reg_title {  
+/* .reg_title {  
     background-image: url(../img/dark_ribs.png);
     background-size: cover;
+} */
+
+.reg_title {
+    border: 5px solid aqua;
+    text-align: center;
 }
 
 .container {
     display: flex;
+    border: 5px solid blue;
+    height: 100vh;
+}
+
+.registration{
+    border: 5px solid orange;    
 }
