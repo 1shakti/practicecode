@@ -120,3 +120,55 @@ console.log(employee);
 
 
 /**************spread operator end************************/
+
+/************** rest operator ****************************/
+//normal way
+function addnum(num){
+    console.log(num) //output will be first array
+    console.log(arguments); //output will be complete array
+}
+
+addnum(4,5,6,7,8,5,4);
+//using rest operator
+function addnums(...nums){
+    console.log(`respop ${nums}`) //output will be first array
+}
+
+addnums(4,5,6,7,8,5,4);
+/************** rest operator end****************************/
+
+/**************  Arrow function  ****************************/
+
+//function declaration
+function breakfastMenu() {
+    return "I'm going to scrambled eggs for breakfast";
+}
+console.log(breakfastMenu());
+
+//anonymous function
+const lunchMenu = function() {
+    return "I'm going to eat pizza for lunch";
+}
+console.log(lunchMenu());
+
+//arrow function
+const dinnerMenu = (food) => {
+    return `I'm going to eat a ${food} for dinner`;
+}
+
+const dinnerMenu = food => `I'm going to eat a ${food} for dinner`;
+console.log( dinnerMenu("chicken salad") );
+
+const dinnerMenu = (food,drink) => `I'm going to eat a ${food,drink} for dinner`;
+console.log( dinnerMenu("chicken salad") );
+/***************Arrow function End*************************/
+
+/*************** Deafult parameter start*************************/
+
+const foodname = (food = "something") => {
+    return `I'm going to buy ${food} from the grocery shop`;
+}
+
+console.log(foodname("chicken"));
+
+/*************** Deafult parameter end*************************/
