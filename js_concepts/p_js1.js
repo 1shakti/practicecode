@@ -152,15 +152,15 @@ const lunchMenu = function() {
 console.log(lunchMenu());
 
 //arrow function
-const dinnerMenu = (food) => {
+let dinnerMenu = (food) => {
     return `I'm going to eat a ${food} for dinner`;
 }
 
-const dinnerMenu = food => `I'm going to eat a ${food} for dinner`;
-console.log( dinnerMenu("chicken salad") );
+dinnerMenu = food => `I'm going to eat a ${food} for dinner`;
+console.log(dinnerMenu("chicken salad"));
 
-const dinnerMenu = (food,drink) => `I'm going to eat a ${food,drink} for dinner`;
-console.log( dinnerMenu("chicken salad") );
+dinnerMenu = (food,drink) => `I'm going to eat a ${food,drink} for dinner`;
+console.log(dinnerMenu("chicken salad"));
 /***************Arrow function End*************************/
 
 /*************** Deafult parameter start*************************/
@@ -171,4 +171,32 @@ const foodname = (food = "something") => {
 
 console.log(foodname("chicken"));
 
-/*************** Deafult parameter end*************************/
+/*************** Deafult parameter end *************************/
+
+/*************** Includes function start ************************/
+const listIngredients =  [ "flour", "sugar", "eggs", "butter" ];
+
+if(listIngredients.includes("chocolate")){
+    console.log("We are going to make a chocolate cake");
+}else {
+    console.log("We can't make a chocolate cake because we are missing the ingredient chocolate");  
+}
+/*************** includes function end ************************/
+
+/*************** import and export start ************************/
+//in file p_js1.js
+export const data = [1,2,3];
+
+//in index.js file
+import { data } from './p_js1.js';
+console.log(data);
+
+/*************** import and export end *************************/
+/*************** pad start and pad end ***********************/
+
+let example = 'YouTube.com/CodingTutorials360';
+
+console.log(example.padStart(100).length);
+console.log(example.padEnd(1));
+
+/*************** pa start and pad end **************************/
