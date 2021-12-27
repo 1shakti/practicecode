@@ -137,3 +137,73 @@ describe('firstDigit()', () => {
 });
 
 /*********************************************************/
+
+/********************Largest number**************************/
+
+function largestNumber(num){
+
+    let placeholdersol1 = '9'.repeat(num);
+
+    let placeholdersol2 = '';
+    for(le i = 0; i < num; i++)
+    {
+        placeholdersol2 = placeholdersol2.concat('9');
+    }
+    return parseInt(placeholdersol1 + placeholdersol2);
+
+}
+
+
+
+/**
+* Test Suite 
+*/
+describe('largestNumber()', () => {
+    it('returns largest positive integer possible for digit count', () => {
+        // arrange
+        const num = 2;
+        
+        // act
+        const result = largestNumber(num);
+
+        // log
+        console.log("result: ", result);
+        
+        // assert
+        expect(result).toBe(99);
+    });
+});
+
+
+/********************max multiple**************************/
+
+function maxMultiple(divisor, bound) {
+    const remainder = bound % divisor;
+    
+    return bound - remainder;
+}
+
+
+
+/**
+* Test Suite 
+*/
+describe('maxMultiple()', () => {
+    it('returns largest integer up to boundary', () => {
+        // arrange
+        const divisor = 3;
+        const bound = 10;
+        
+        // act
+        const result = maxMultiple(divisor, bound);
+
+        // log
+        console.log("result: ", result);
+        
+        // assert
+        expect(result).toBe(9);
+    });
+});
+
+
+/***********************************************************/
