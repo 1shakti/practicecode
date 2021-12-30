@@ -47,12 +47,52 @@ let squares = [];
 function createBoard(){
     for(let i = 0; i < layout.length; i++){
 
-        const sqaure = document.createElement("div");
-        grid.appendChild("sqaure");
-        squares.push(sqaure);
+        const square = document.createElement("div");
+        grid.appendChild(square);
+        squares.push(square);
 
+        if(layout[i] === 0){
+            squares[i].classList.add('pac-dot');
+        }
+
+        if(layout[i] === 1){
+            squares[i].classList.add('wall');
+        }
+
+        if(layout[i] === 2){
+            squares[i].classList.add('ghost-lair');
+        }
+
+        if(layout[i] === 3){    
+            squares[i].classList.add('power-pellet');
+        }
+
+        if(layout[i] === 4){    
+            squares[i].classList.add('empty');
+        }
     }
 }
   
 
 createBoard();
+
+//starting position of pacman
+
+let pacmanCurrentIndex = 490
+
+squares[pacmanCurrentIndex].classList.add('pacman');
+
+
+function control(e){
+    if (e.keyCode === 40) {
+        console.log('pressed down')
+    } else if (e.keyCode === 38) {
+        console.log('pressed up')
+    } else if (e.keyCode === 37) {
+        console.log('pressed left')
+    } else if (e.keyCode === 39) {
+        console.log('pressed right')
+    }
+}
+
+document.addEventListener('keyup', control);

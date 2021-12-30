@@ -13,7 +13,7 @@ body {
 .grid div{
     width: 15px;
     height: 15px;
-    background-color: blue;
+   /* background-color: blue; */
 }
 
 .pac-dot {
@@ -27,6 +27,12 @@ body {
 }
 
 .power-pellet {
-    background-color: yellow;
+    background-color: green;
     border-radius: 7.5px;
+}
+
+.pacman {
+    background-color: orange;
+    border-radius: 7.5px;
+    border: none;
 }
