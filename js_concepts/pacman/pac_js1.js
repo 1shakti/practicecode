@@ -175,4 +175,13 @@ const ghosts = [
 ]
 
 //draw my ghosts onto my grid
-ghosts.forEach(ghost => squares[ghost.startIndex].classList.add(ghost.className))
+ghosts.forEach(ghost => squares[ghost.startIndex].classList.add(ghost.className));
+
+ghosts.forEach(ghost => moveGhost(ghost));
+
+function moveGhost(ghost){
+    const directions = [+1, -1, -width, +width];
+    let direction = directions[Math.floor(Math.random() * directions.length)]
+    console.log(direction);
+}
+
