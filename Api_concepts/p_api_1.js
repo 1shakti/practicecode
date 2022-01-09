@@ -31,3 +31,21 @@ fetch("https://apis.scrimba.com/bored/api/activity")
         console.log(data)
         document.getElementById("activity-name").textContent = data.activity
     })
+
+ 
+
+ /**
+Challenge: 
+
+Fetch a list of todos from the JSON Placeholder API:
+
+BaseURL: https://apis.scrimba.com/jsonplaceholder/
+Endpoint: /todos
+
+This time however, explicitly set the request method to "GET"
+console.log the results
+*/
+
+fetch("https://apis.scrimba.com/jsonplaceholder/todos", {method: "GET"})
+.then(res => res.json())
+.then(data => console.log(data))   
