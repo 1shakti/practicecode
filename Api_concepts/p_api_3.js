@@ -39,25 +39,47 @@
 
 */
 
-document.getElementById("new-post").addEventListener("submit", function(e){
-        e.preventDefault();
-        const postTitle = document.getElementById("post-title").value;
-        const postBody = document.getElementById("post-body").value;
-        const data = {
-            title: postTitle,
-            body: postBody
+document.getElementById("new-post").addEventListener("submit", function(e) {
+    e.preventDefault()
+    const postTitle = document.getElementById("post-title").value
+    const postBody = document.getElementById("post-body").value
+    const data = {
+        title: postTitle,
+        body: postBody
+    }
+    
+    const options = {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-Type": "application/json"
         }
-        console.log(data);
-
+    }
+    
+    fetch("https://apis.scrimba.com/jsonplaceholder/posts", options)
+        .then(res => res.json())
+        .then(post => {
+            /**
+             * Challenge: Update the DOM with the new blog entry
+             */
+            document.getElementById("blog-list").innerHTML = `
+                <h3>${post.title}</h3>
+                <p>${post.body}</p>
+                <hr />
+                ${document.getElementById("blog-list").innerHTML}
+            `
+        })
 })
-
-
 fetch("https://apis.scrimba.com/jsonplaceholder/todos" , {
     method : "POST",
     body: JSON.stringify({
         title: "BUy",
         completed: false
-    })
+    }),
+    headers:{
+        'content-Type': 'application/json'
+    }
 })
-    .then(resp => resp,json())
+    .then(resp => resp.json())
     .then(data => console.log(data))
+
