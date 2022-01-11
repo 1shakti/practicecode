@@ -11,13 +11,16 @@
  from the data array that comes back from the API
  */
 
- fetch("https://apis.scrimba.com/jsonplaceholder/posts",  { method : "GET" })
-    .then(resp => resp.json())
-    .then(data => {
-        const postArrs = data.slice(0, 5)
 
-        let html = "";
-        for(post of postArrs){
+let postArray = [];
+const titleInput = document.getElementById("post-title");
+const bodyInput = document.getElementById("post-body");
+const form = document.getElementById("new-post");
+
+
+function renderPosts(){
+    let html = "";
+        for(let post of postArray){
             html += 
             `<h3>${post.title}</h3>
              <p>${post.body}</p>
@@ -25,8 +28,13 @@
             `
         }
         document.getElementById("blog-list").innerHTML = html;
-        console.log(postArrs)
-        
+}
+
+ fetch("https://apis.scrimba.com/jsonplaceholder/posts",  { method : "GET" })
+    .then(resp => resp.json())
+    .then(data => {
+        postArray = data.slice(0, 5);
+        renderPosts();   
     })
 
     /**
@@ -39,10 +47,10 @@
 
 */
 
-document.getElementById("new-post").addEventListener("submit", function(e) {
+form.addEventListener("submit", function(e) {
     e.preventDefault()
-    const postTitle = document.getElementById("post-title").value
-    const postBody = document.getElementById("post-body").value
+    const postTitle = titleInput.value
+    const postBody = bodyInput.value
     const data = {
         title: postTitle,
         body: postBody
@@ -62,14 +70,14 @@ document.getElementById("new-post").addEventListener("submit", function(e) {
             /**
              * Challenge: Update the DOM with the new blog entry
              */
-            document.getElementById("blog-list").innerHTML = `
-                <h3>${post.title}</h3>
-                <p>${post.body}</p>
-                <hr />
-                ${document.getElementById("blog-list").innerHTML}
-            `
+             
+            postArray.unshift(post);
+            renderPosts();
+            form.reset();
         })
 })
+
+
 fetch("https://apis.scrimba.com/jsonplaceholder/todos" , {
     method : "POST",
     body: JSON.stringify({
