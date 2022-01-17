@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+* {
+    font-family: "Lucida Console", Monaco, monospace; 
+}
+
+.my-colors {
+    display: flex;
+    
+}
