@@ -8,6 +8,22 @@ html, body {
     font-family: "Lucida Console", Monaco, monospace; 
 }
 
+
+.header, .footer {
+    height: 10%;
+    width: 100%;
+    background-color: darksalmon;
+}
+
+
+.my-online-users {
+    max-height: 80%;
+    max-width: 250px;
+    overflow: auto;
+}
+
+
+
 .my-online-user {
     background-color: lightgreen;
     font-size: 1.5rem;
