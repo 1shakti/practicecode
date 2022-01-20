@@ -1,0 +1,7 @@
+body{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template: 100px 100px 100px / 200px 200px 200px;
+
+                   /* row px  */    /* column px */
+}
