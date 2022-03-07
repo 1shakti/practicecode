@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Router>
         <Route exact path="/browse">
-          <Signin />
+          <Browse />
         </Route>
         <Route exact path="/signin">
           <Signin />
