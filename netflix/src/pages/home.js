@@ -1,5 +1,6 @@
 import React from "react";
 import { OptForm } from "../components";
+import { Feature } from "../components";
 import { HeaderContainer } from "../containers/header";
 import { FooterContainer } from "../containers/footer";
 import { JumbotronContainer }  from "../containers/jumbotron";
@@ -16,15 +17,15 @@ export default function Home(){
             <Feature.SubTitle>
                 Watch anywere, Cancel it any time.
             </Feature.SubTitle>
-          </Feature>
-          <OptForm>
+            <OptForm>
                 <OptForm.Input Placeholder="Email address" />
                 <OptForm.Button>Try It Now</OptForm.Button>
                 <OptForm.Break />
                 <OptForm.Text>
                     Ready to watch? Enter your email to create or restart your membership
                 </OptForm.Text>
-          </OptForm>
+          </OptForm>          
+          </Feature>
         </HeaderContainer>
         <JumbotronContainer />
         <FaqsContainer />
