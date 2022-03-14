@@ -1,0 +1,12 @@
+button{
+    padding: 10px;
+    color: aqua;
+    background: black;
+    item-align: center;
+    margin-top: 5px;
+}
+
+input{
+    border: 2px solid black;
+    padding: 5px;
+}
